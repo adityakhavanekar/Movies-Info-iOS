@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieImageCell" id="gTV-IL-0wX" customClass="MovieImageCell" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-4X-CcM">
+                        <rect key="frame" x="0.0" y="0.0" width="272" height="142"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JXP-4X-CcM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0ke-fy-TBM"/>
+                <constraint firstAttribute="bottom" secondItem="JXP-4X-CcM" secondAttribute="bottom" id="1M3-tz-DMI"/>
+                <constraint firstAttribute="trailing" secondItem="JXP-4X-CcM" secondAttribute="trailing" id="4KS-84-t62"/>
+                <constraint firstItem="JXP-4X-CcM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b9I-TR-gcR"/>
+            </constraints>
+            <size key="customSize" width="272" height="142"/>
+            <connections>
+                <outlet property="collectionViewCellImageView" destination="JXP-4X-CcM" id="eTj-nI-qil"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="99.107142857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>
